@@ -55,8 +55,8 @@ def main():
     # Data is located at:
     # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
-# non-azure way of easily loading the data into a df
-#     ds = pd.read_csv("https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv")
+    # non-azure way of easily loading the data into a df
+    #     ds = pd.read_csv("https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv")
 
     # Using azure datasets
     ds = TabularDatasetFactory().from_delimited_files(path=["https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"])
@@ -64,10 +64,9 @@ def main():
     # Input is an azure dataset (then immediately transformed into a dataframe using "to_dataframe")
     x, y = clean_data(ds)
 
-#     Split data into train and test sets (20% testing, 80% training split)
-# Adapted code from https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
-     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20, random_state=1)
-    ### YOUR CODE HERE ###a
+    #     Split data into train and test sets (20% testing, 80% training split)
+    # Adapted code from https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.20, random_state=1)
 
     model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
 
