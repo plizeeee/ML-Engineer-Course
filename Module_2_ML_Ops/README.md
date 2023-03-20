@@ -23,7 +23,7 @@ one and call the entire pipeline using an API endpoint.
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 - **Register a dataset about a marketing campaign on if clients will subscribe to term deposits:**
-To register the dataset I simply downloaded [this](https://jmcauley.ucsd.edu/data/amazon/) dataset and added it to the registered datasets in the Azure
+To register the dataset I simply downloaded [this](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) dataset and added it to the registered datasets in the Azure
 ML Studio GUI. The registered dataset can be seen in the screenshot below
 ![alt text](https://github.com/plizeeee/ML-Engineer-Course/blob/master/Module_2_ML_Ops/sample_screenshots/Registered_dataset.PNG)
 - **Create a compute cluster to be able to models using automl:
