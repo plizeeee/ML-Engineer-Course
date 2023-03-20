@@ -1,11 +1,10 @@
 # ML Ops with Azure project
 
-*TODO:* This project demonstrates how I performed ML Ops on a test dataset using Azure for the Udacity Azure ML Course.
- The project demonstrates my knowledge of how I deployed a model, enabled logging to track its performance, documented the model, consumed the model endpoint in python and automated the pipeline
+This project demonstrates how I performed ML Ops on a test dataset using Azure for the Udacity Azure ML Course.
+The project demonstrates my knowledge of how I deployed a model, enabled logging to track its performance, documented the model, consumed the model endpoint in python and automated the pipeline
 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 ![alt text](https://github.com/plizeeee/ML-Engineer-Course/blob/master/Module_2_ML_Ops/sample_screenshots/Architectural_Diagram.png)
 
 The architecture diagram above shows the flow of operations for this project. 
@@ -21,7 +20,7 @@ The architecture diagram above shows the flow of operations for this project.
 one and call the entire pipeline using an API endpoint.
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
+This section includes a short description of the key steps in this project.
 - **Register a dataset about a marketing campaign on if clients will subscribe to term deposits:**
 To register the dataset I simply downloaded [this](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) dataset and added it to the registered datasets in the Azure
 ML Studio GUI. The registered dataset can be seen in the screenshot below
@@ -105,6 +104,3 @@ Finally, the screenshot below show the run in ML Studio (it's already been run s
 ## Screen Recording
 This link contains a screen recording for this module which includes my working deployed ML model endpoint, the deployed pipeline, the available automl model and the successful API request to the endpoint with a JSON payload.
 https://www.youtube.com/watch?v=nF-ZcDXk7iA&ab_channel=PatrickSavoie
-
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
